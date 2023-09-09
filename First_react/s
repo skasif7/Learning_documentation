@@ -1,0 +1,38 @@
+const myElement = <h1>I Love JSX!</h1>;
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(myElement);
+
+
+
+
+const myElement = React.createElement('h1', {}, 'I do not use JSX!');
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(myElement)
+
+
+
+const name="Shaik Asif"
+
+
+
+const channelName="Asif"
+
+function getChennalName(){
+     if(channelName==='Asif')
+     return <div>{channelName}</div>
+     else <div>Else part</div>
+
+}
+
+const myElement=(
+    <div> 
+        <div>hello {name} <div>
+               // embadded the variable name 
+        <h2> {2+2} </h2>
+            // embadded the expression
+        <h3>{getChennalName} </h3>   
+            // embadded the function
+    </div>
+);
